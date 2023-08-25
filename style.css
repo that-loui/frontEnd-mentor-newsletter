@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.body {
+  width: 100%;
+  background-color: hsl(234, 29%, 20%);
+  font-size: 16px;
+}
+.body .content {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(234, 29%, 20%);
+  font-weight: 300;
+}
+.body i {
+  color: hsl(4, 100%, 67%);
+}
+
+body .content {
+  padding: 0 0 0 0;
+  margin: 0;
+}
+body .content .header {
+  padding: 0 0 0 0;
+}
+body .content .header .desktop {
+  display: none;
+}
+body .content main .h1 {
+  font-size: 2.5rem;
+}
+body .content main .list {
+  display: flex;
+}
+body .content main .newsletter-form label {
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+body .content main .newsletter-form input[type=email] {
+  border: 1px solid hsl(231, 7%, 60%);
+}
+body .content main .newsletter-form input[type=submit] {
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+}
+body .content main .newsletter-form input[type=submit]:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+body .content main .newsletter-form .error-input {
+  background-color: hsl(4, 100%, 86%);
+}
+body .content main .newsletter-form .error-input::placeholder {
+  color: hsl(4, 100%, 67%);
+}
+body .content main .newsletter-form .error {
+  color: hsl(4, 100%, 67%);
+}
+body .success-display {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+body .success-display h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+body .success-display img {
+  width: 30%;
+}
+body .success-display button {
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+}
+body .success-display button:hover {
+  background-color: hsl(4, 100%, 67%);
+  color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 560px) {
+  body {
+    padding: 4rem;
+  }
+  body .content {
+    max-width: 45.5rem;
+  }
+  body .content .header .mobile {
+    display: none;
+  }
+  body .content .header .desktop {
+    display: block;
+  }
+  body .success-display {
+    max-width: 30rem;
+  }
+  body .success-display img {
+    width: 10%;
+  }
+  body .success-display h1 {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+}
